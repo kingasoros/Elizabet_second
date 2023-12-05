@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../css/smestaj.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta name="author" content="Kinga">
+    <title>Elizabet</title>
+
+    <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="menu">
+        <div class="logo"> 
+             <img src="../images/logo.png"> 
+        </div> 
+        <div onclick="toggleDropdown()" class="dropbtn"></div>
+        <ul id="myDropdown" class="menu-points">    
+            <li><a href="../home.php">HOME</a></li>     
+            <li><a href="smestaj.html">SMESTAJ</a></li>
+            <li><a href="jelovnik.html">JELOVNIK</a></li>
+            <li><a href="galerija.html">GALERIJA</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+            <li><a href="../mhtml/msmestaj.html" class="lang1"></a></li>
+            <li><a href="smestaj.html" class="lang2"></a></li>
+        </ul>
+        
+    </div> 
+    <div class="full-img" id="fullImgBox">
+        <img src="../images/img1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="../images/room1.jpg" onclick="openFullImg(this.src)">
+        <br>Soba sa francujski lezajem <br>Cena noćenja za 1 osobu
+        <br>2900.00 RSD
+        <br>Cena noćenja za 2 osobe
+        <br>3700.00 RSD
+        <img src="../images/room2.jpg" onclick="openFullImg(this.src)">
+        <br>Soba sa velikom terasom i pogledom na dvorište i na Palićko jezero. Soba sa francuskim ležajem i pomoćnim ležajem za dete.
+        <br>Cena noćenja za 1 osobu
+        <br>2900.00 RSD
+        <br>Cena noćenja za 2 osobe
+        <br>4300.00 RSD
+        <br>Cena noćenja za 3 osobe
+        <br>4900.00 RSD
+        <img src="../images/room3.jpg" onclick="openFullImg(this.src)">
+        <br>Apartman sa kompletnom kuhinjom i trpezarijom. Odvojena spavaća soba sa francuskim ležajem i trosedom.
+        <br>Cena noćenja za 1 osobu
+        <br>3700.00 RSD
+        <br>Cena noćenja za 2 osobe
+        <br>4300.00 RSD
+        <br>Cena noćenja za 3 osobe
+        <br>4900.00 RSD
+        <br>Cena noćenja za 4 osobe
+        <br>5500.00 RSD
+        <img src="../images/room4.jpg" onclick="openFullImg(this.src)">
+        <br>Spavaća soba sa francuskim ležajem i dnevna soba sa ugaonom garniturom. 
+        <br>Terasa sa pogledom na jezero Palić!
+        <br>Cena noćenja za 1 osobu
+        <br>4300.00 RSD
+        <br>Cena noćenja za 2 osobe
+        <br>4900.00 RSD
+        <br>Cena noćenja za 3 osobe
+        <br>5500.00 RSD
+        <br>Cena noćenja za 4 osobe
+        <br>6100.00 RSD
+        <img src="../images/room5.jpg" onclick="openFullImg(this.src)">
+        <br>Porodična soba, idealna za dve odrasle osobe sa decom. Francuski ležaj za dve osobe i dvosed na razvlačenje.
+        <br>Cena noćenja za 1 osobu
+        <br>2900.00 RSD
+        <br>Cena noćenja za 2 osobe
+        <br>4300.00 RSD
+        <br>Cena noćenja za 3 osobe
+        <br>4900.00 RSD
+        <img src="../images/room6.jpg" onclick="openFullImg(this.src)">
+        <br>Studio sa francuskim ležajem i pomoćnim ležajem. Ulaz direktno iz bašte.
+        <br>Cena noćenja za 1 osobu
+        <br>2900.00 RSD
+        <br>Cena noćenja za 2 osobe
+        <br>4300.00 RSD
+        <br>Cena noćenja za 3 osobe
+        <br>4900.00 RSD
+    </div>
+    <div class="room-information">
+        <h1>Informacija za sobe</h1>
+        Boravišna taksa i osiguranje su uračunati u cenu.
+        <br>Korišćenje hidromasažnog bazena GRATIS (bazen je na otvorenom i radi samo u letnjem perioudu).
+        <br>Deca do 3 godina gratis. Po potrebi imamo krevetac za bebu na raspolaganju - gratis.
+        <br><br>Oprema
+        <br>TV
+        <br>Kablovska televizija
+        <br>Wifi/Internet
+        <br>Klima
+        <br>Kuhinja
+        <br>Tuš kabina
+        <br>Fen za kosu
+    </div>
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+    
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+    
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+//burger menu
+console.log('hello');
+function toggleDropdown() {
+    console.log('click');
+    var dropdown = document.getElementById("myDropdown");
+    if (dropdown.style.display === "none") {
+        dropdown.style.display = "flex";
+    } else {
+        dropdown.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

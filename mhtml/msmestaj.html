@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../css/smestaj.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta name="author" content="Kinga">
+    <title>Elizabet</title>
+
+    <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="menu">
+        <div class="logo"> 
+             <img src="../images/logo.png"> 
+        </div> 
+        <div onclick="toggleDropdown()" class="dropbtn"></div>
+        <ul id="myDropdown" class="menu-points">    
+            <li><a href="mhome.php">HOME</a></li>     
+            <li><a href="msmestaj.html">SZÁLLÁS</a></li>
+            <li><a href="mjelovnik.html">ÉTLAP</a></li>
+            <li><a href="mgalerija.html">GALÉRIA</a></li>
+            <li><a href="mkontakt.html">ELÉRHETŐSÉG</a></li>
+            <li><a href="msmestaj.html" class="lang1"></a></li>
+            <li><a href="../html/smestaj.html" class="lang2"></a></li>
+        </ul>
+        
+    </div> 
+    <div class="full-img" id="fullImgBox">
+        <img src="../images/img1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="../images/room1.jpg" onclick="openFullImg(this.src)">
+        <br>Szoba francia ággyal <br>Egy éjszaka 1 főre
+        <br>2900.00 RSD
+        <br>Egy éjszaka 2 főre
+        <br>3700.00 RSD
+        <img src="../images/room2.jpg" onclick="openFullImg(this.src)">
+        <br>Szoba nagy terasszal kilátás az udvarra és a Palicsi-tóra. Szoba francia ággyal és egy pótágy egy gyermek számára.
+        <br>Egy éjszaka 1 főre
+        <br>2900.00 RSD
+        <br>Egy éjszaka 2 főre
+        <br>4300.00 RSD
+        <br>Egy éjszaka 3 főre
+        <br>4900.00 RSD
+        <img src="../images/room3.jpg" onclick="openFullImg(this.src)">
+        <br>Apartman komplett konyhával és étkezővel. Külön hálószoba franciaággyal és kanapéval.
+        <br>Egy éjszaka 1 főre
+        <br>3700.00 RSD
+        <br>Egy éjszaka 2 főre
+        <br>4300.00 RSD
+        <br>Egy éjszaka 3 főre
+        <br>4900.00 RSD
+        <br>Egy éjszaka 4 főre
+        <br>5500.00 RSD
+        <img src="../images/room4.jpg" onclick="openFullImg(this.src)">
+        <br>Egy hálószoba franciaággyal és egy nappali sarokkanapéval.
+        <br>Palicsi-tóra néző terasz!
+        <br>Egy éjszaka 1 főre
+        <br>4300.00 RSD
+        <br>Egy éjszaka 2 főre
+        <br>4900.00 RSD
+        <br>Egy éjszaka 3 főre
+        <br>5500.00 RSD
+        <br>Egy éjszaka 4 főre
+        <br>6100.00 RSD
+        <img src="../images/room5.jpg" onclick="openFullImg(this.src)">
+        <br>Családi szoba, ideális két felnőtt és gyermek számára. Egy franciaágy két fő részére és egy kanapéágy.
+        <br>Egy éjszaka 1 főre
+        <br>2900.00 RSD
+        <br>Egy éjszaka 2 főre
+        <br>4300.00 RSD
+        <br>Egy éjszaka 3 főre
+        <br>4900.00 RSD
+        <img src="../images/room6.jpg" onclick="openFullImg(this.src)">
+        <br>Stúdió franciaággyal és pótággyal. Bejárat közvetlenül a kertből.
+        <br>Egy éjszaka 1 főre
+        <br>2900.00 RSD
+        <br>Egy éjszaka 2 főre
+        <br>4300.00 RSD
+        <br>Egy éjszaka 3 főre
+        <br>4900.00 RSD
+    </div>
+    <div class="room-information">
+        <h1>Információk a szobákról</h1>
+        Az ár tartalmazza az idegenforgalmi adót és a biztosítást.
+        <br>A hidromasszázs medence használata INGYENES (a medence kültéri és csak nyáron működik).
+        <br>Gyermekek 3 éves korig ingyenes. Igény esetén babaágyat biztosítunk - ingyenesen.
+        <br><br>Felszerelés
+        <br>TV
+        <br>Kábeltelevízió
+        <br>Wifi/Internet
+        <br>Klíma
+        <br>konyha
+        <br>zuhanykabin
+        <br>Hajszárító
+    </div>
+
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+    
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+    
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+//burger menu
+console.log('hello');
+function toggleDropdown() {
+    console.log('click');
+    var dropdown = document.getElementById("myDropdown");
+    if (dropdown.style.display === "none") {
+        dropdown.style.display = "flex";
+    } else {
+        dropdown.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

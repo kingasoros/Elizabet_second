@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/kontakt.css">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="This website was created on the basis of a website, but it is not publicly maintained.">
+    <meta name="author" content="Kinga">
+    <title>Elizabet</title>
+
+    <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="menu">
+        <div class="logo"> 
+             <img src="../images/logo.png"> 
+        </div> 
+        <div onclick="toggleDropdown()" class="dropbtn"></div>
+        <ul id="myDropdown" class="menu-points">    
+            <li><a href="../home.php">HOME</a></li>     
+            <li><a href="smestaj.html">SMESTAJ</a></li>
+            <li><a href="jelovnik.html">JELOVNIK</a></li>
+            <li><a href="galerija.html">GALERIJA</a></li>
+            <li><a href="kontakt.html">KONTAKT</a></li>
+            <li><a href="../mhtml/mkontakt.html" class="lang1"></a></li>
+            <li><a href="kontakt.html" class="lang2"></a></li>
+        </ul>
+        
+    </div> 
+    <div class="cont-img">
+        <div class="cont-word">
+            KONTAKT   
+        </div>
+    </div>    
+    
+    <table>
+        <tr>
+            <td rowspan="6" class="img_td"><img src="../images/me.jpg" alt="myself" class="myself"></td>
+            <td>Seres Kinga</td>
+        </tr>
+        <tr>
+            <td>kingasoros@gmail.com</td>
+        </tr>
+        <tr>
+            <td>18.04.2003.</td>
+        </tr>
+        <tr>
+            <td>Index: 26222068</td>
+        </tr>
+        <tr>
+            <td>Moja najčešće korišćena veb lokacija je: <a class="yt" href="https://www.youtube.com/">YouTube</a></td>
+        </tr>
+        <tr>
+            <td>Proletos sam napunila 20 godina.<br>
+                Veoma sam zainteresovana za pametne kuće i veb stranice. <br>
+                Imam veoma dobro pamćenje i brzo učim zbog svoje zrelosti.<br>
+                Lako se uklapam u različite životne situacije <br>
+                i dobro se prilagođavam ljudima.</td>
+        </tr>
+        <tr>
+            <td colspan="2">Trenutno nisam zaposlena, ali radim na tome.<br>
+                Ja sam VTS studenta.</td>
+        </tr>
+    </table>
+
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2766.6233438465224!2d19.75041427669075!3d46.0984847908947!
+        2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47436191bfe202f9%3A0xf0c1495a8a08a208!2sVila%20Elizabet!5e0!3m2!1ssr!2srs!4v1696177955288!5m2!1ssr!2srs" ></iframe>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+    //burger menu
+    console.log('hello');
+    function toggleDropdown() {
+        console.log('click');
+        var dropdown = document.getElementById("myDropdown");
+        if (dropdown.style.display === "none") {
+            dropdown.style.display = "flex";
+        } else {
+            dropdown.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>

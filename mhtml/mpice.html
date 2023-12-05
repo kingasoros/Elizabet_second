@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../css/pice.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <meta name="author" content="Kinga">
+    <title>Elizabet</title>
+
+    <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="menu">
+        <div class="logo"> 
+             <img src="./images/logo.png"> 
+        </div> 
+        <div onclick="toggleDropdown()" class="dropbtn"></div>
+        <ul id="myDropdown" class="menu-points">    
+            <li><a href="mhome.php">HOME</a></li>     
+            <li><a href="msmestaj.html">SZÁLLÁS</li>
+            <li><a href="mjelovnik.html">ÉTLAP</a></li>
+            <li><a href="mgalerija.html">GALÉRIA</a></li>
+            <li><a href="mkontakt.html">ELÉRHETŐSÉG</a></li>
+            <li><a href="mpice.html" class="lang1"></a></li>
+            <li><a href="../html/pice.html" class="lang2"></a></li>
+        </ul>
+        
+    </div> 
+    <div class="menu-im">
+        <div class="menu-word">
+            Menu    
+        </div>  
+        
+    </div>
+    <div class="box">
+         <ul class="food">
+            <li><a href="mpice.html">ITALLAP</a></li>
+            <li><a href="mpizza.html">PIZZA</a></li>
+            <li><a href="mrostilj.html">ROSTÉLY</a></li>
+            <li><a href="mglavna.html">FŐ ÉTEL</a></li>
+            <li><a href="mprilozi.html">KÖRET</a></li>
+            <li><a href="mhomemade.html">HOME MADE</a></li>
+            <li><a href="mdeserti.html">DESZERT</a></li>
+            <li><a href="mdorucak.html">REGGELI</a></li>
+         </ul> 
+         <br><br><br><br><br>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+    //burger menu
+    console.log('hello');
+    function toggleDropdown() {
+        console.log('click');
+        var dropdown = document.getElementById("myDropdown");
+        if (dropdown.style.display === "none") {
+            dropdown.style.display = "flex";
+        } else {
+            dropdown.style.display = "none";
+        }
+    }
+    </script>
+    
+</body>
+</html>
