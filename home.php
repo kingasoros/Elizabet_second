@@ -27,6 +27,7 @@
                 <li><a href="html/smestaj.html">SMESTAJ</a></li>
                 <li><a href="html/jelovnik.html">JELOVNIK</a></li>
                 <li><a href="html/galerija.html">GALERIJA</a></li>
+                <li><a href="html/order.php">ORDER</a></li>
                 <li><a href="html/kontakt.html">KONTAKT</a></li>
                 <li><a href="mhtml/mhome.php" class="lang1"></a></li>
                 <li><a href="home.php" class="lang2"></a></li>

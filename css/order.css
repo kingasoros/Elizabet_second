@@ -1,0 +1,340 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Zeit', sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: antiquewhite ;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+  .menu {
+    display: flex;
+    position: relative; 
+    background-color: #934907;
+    animation-name: example;
+    animation-duration: 4s;
+    cursor: pointer;
+    height: 49px;
+    padding:1%;
+}  
+
+@keyframes example {
+    0% {background-color: #934907;}
+    50% {background-color: rgb(255, 162, 0);}
+    100% {background-color: #934907;}
+  }
+
+.lang1 {
+    position: absolute;
+    background-image: url("../images/hungary.png");
+    background-size: cover;
+    top: 13px;
+    display: inline-block;
+    margin: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.lang2 {
+    position: absolute;
+    background-image: url("../images/serbia.png");
+    background-size: cover;
+    top: 15px;
+    display: inline-block;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+}
+
+
+.logo {
+    display: inline-block;
+    width: 50%;
+    height: 45px;
+    text-align: left;
+}
+
+.menu-points {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    width: 50%;
+    height: 45px;
+    color:white;
+    text-align: right;
+    font-size: 14px;
+}
+
+.menu-points li{
+    display:inline-block;
+    padding: 3%;
+    position: relative;
+}
+
+.menu-points a{
+    color:white;
+    text-decoration:none;
+    text-transform: uppercase;
+}
+
+.menu-points a:hover{
+    color:rgba(255, 255, 255, 0.293)
+}
+
+.menu-points a::before{
+    content:'';
+    display:block;
+    height:3px;
+   
+    background-color:rgba(255, 255, 255, 0.293) ;
+    /* position: absolute; */
+    top:0;
+    width:0%;
+    transition: all ease-in-out 500ms;
+}
+
+.menu-points a:hover::before{
+    width:100%;
+}
+.menu-im {
+    margin:0;
+    width: 100%;
+    height:645px;
+    background-image: url("../images/menu.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(138, 132, 132, 0.637);
+    font-size: 24px;
+    text-align: center;    
+}
+
+.menu-word {
+    line-height: 48px;
+    color: white;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 47px;
+}
+
+.block{
+    width:20%;
+    background-color:rgb(184, 143, 91);
+    border-radius: 10%;
+    margin: 3%;
+    padding: 1%;
+    font-weight: bold;
+    font-size: 20px;
+    border-collapse: separate; 
+    border-spacing: 0px; 
+}
+
+.block img{
+    width:100%;
+    border-radius: 10%;
+}
+
+input{
+    transform: scale(2);
+}
+
+td{
+    background-color: #fff;
+    padding: 1%;
+}
+
+.paragh{
+    padding: 3%;
+    width: 40%;
+}
+
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.food-menu-box{
+    width: 29%;
+    margin: 1%;
+    padding: 1%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+    height: 155px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+
+.btn{
+    font-size: 1rem;
+    background-color: #934907;
+    margin: 6% 12%;
+}
+
+.btn-primary{
+    border: 1px solid #000;
+    border-radius: 5%;
+    padding: 2%;
+    background-color: #934907;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #d6833a;
+}
+
+.menu_h{
+    text-align:center;
+    color: #2f3542;
+    font-size: 30px;
+    margin-bottom: 2%;
+}
+
+input[type="checkbox"] {
+    display: none;
+  }
+  .custom-checkbox {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+  }
+
+.custom-checkbox.checked::before {
+    content: '+';
+    font-size: 16px;
+    color: #333;
+  }
+
+  .food-search{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%; 
+    font-weight: bold;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 1300px)  {
+    .logo{
+        width:30%;
+    }
+
+    .food-menu-box{
+        width: 43%;
+    }
+}
+
+@media only screen and (max-width: 990px)  {
+    .logo{
+        width:33%;
+    }
+
+    .food-menu-box{
+        width: 43%;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .food-menu-box{
+        width: 43%;
+    }
+
+    .dropbtn {
+        position: absolute;
+        background-image: url("../images/burgermenu.png");
+        background-color:#934907;
+        background-size: cover;
+        top: 17px;
+        right: 28px;
+        display: inline-block;
+        margin: 0;
+        width: 35px;
+        height: 35px;
+    }
+
+    #myDropdown {
+        display: none;
+        position: absolute; 
+        top: 59px; 
+        right:0;
+        background-color: #312f2f9e;
+        padding: 18px; 
+        list-style-type: none;
+        z-index: 2;
+        flex-direction: column;
+        width:100%;
+        height:500%;
+    }
+    .menu-points {
+        margin-bottom: 5px; 
+    }
+      
+    .menu-points li {
+        text-decoration: none; 
+        color: #ffffff; 
+        white-space: normal;
+        margin:0;
+    }
+    .menu ul li {
+        padding:10px;
+    }
+}

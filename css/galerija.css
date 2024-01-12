@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
 
 .logo {
     display: inline-block;
-    width: 65%;
+    width: 50%;
     height: 45px;
     text-align: left;
 }
@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: row;
     margin: 0;
-    width: 35%;
+    width: 50%;
     height: 45px;
     color:white;
     text-align: right;
@@ -209,7 +209,7 @@ body::-webkit-scrollbar {
     #myDropdown {
         display: none;
         position: absolute; 
-        top: 61px; 
+        top: 59px; 
         right:0;
         background-color: #312f2f9e;
         padding: 18px; 
@@ -217,7 +217,7 @@ body::-webkit-scrollbar {
         z-index: 2;
         flex-direction: column;
         width:100%;
-        height:250px;
+        height:500%;
     }
     .menu-points {
         margin-bottom: 5px; 

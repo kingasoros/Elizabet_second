@@ -27,6 +27,7 @@
                 <li><a href="msmestaj.html">SZÁLLÁS</a></li>
                 <li><a href="mjelovnik.html">ÉTLAP</a></li>
                 <li><a href="mgalerija.html">GALÉRIA</a></li>
+                <li><a href="morder.php">RENDELÉS</a></li>
                 <li><a href="mkontakt.html">ELÉRHETŐSÉG</a></li>
                 <li><a href="mhome.php" class="lang1"></a></li>
                 <li><a href="../home.php" class="lang2"></a></li>

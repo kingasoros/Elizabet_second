@@ -54,7 +54,7 @@ body::-webkit-scrollbar {
 
 .logo {
     display: inline-block;
-    width: 65%;
+    width: 50%;
     height: 45px;
     text-align: left;
 }
@@ -63,7 +63,7 @@ body::-webkit-scrollbar {
     display: flex;
     flex-direction: row;
     margin: 0;
-    width: 35%;
+    width: 50%;
     height: 45px;
     color:white;
     text-align: right;
@@ -145,16 +145,32 @@ td{
     width: 250px;
 }
 
-.myself{
-    width:200px;
-    border-radius: 10%;
+
+.cont-img {
+    margin:0;
+    width: 100%;
+    height:645px;
+    background-image: url("../images/eli_5.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(138, 132, 132, 0.637);
+    font-size: 24px;
+    text-align: center;    
 }
 
-.yt{
-    color:rgb(104, 51, 5);
+.cont-word {
+    line-height: 48px;
+    color: white;
+    display: inline-block;
+    font-weight: bolder;
+    font-size: 47px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
 }
 
-/* .cont {
+.cont {
     display:flex;
     margin:0;
     background: antiquewhite;
@@ -176,11 +192,11 @@ td{
 }
 .about-us {
     margin:0;
-} */
+}
 .map{
     background: antiquewhite;
     width:100%;
-    height:450px; 
+    height:650px; 
     padding:5%;
 }
 .map iframe{
@@ -206,7 +222,7 @@ td{
     }
 }
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 700px)  {
     .restaurant{
         display:flex;
         flex-direction:column-reverse;
@@ -249,7 +265,7 @@ td{
     #myDropdown {
         display: none;
         position: absolute; 
-        top: 61px; 
+        top: 59px; 
         right:0;
         background-color: #312f2f9e;
         padding: 18px; 
@@ -257,7 +273,7 @@ td{
         z-index: 2;
         flex-direction: column;
         width:100%;
-        height:250px;
+        height:500%;
     }
     .menu-points {
         margin-bottom: 5px; 
